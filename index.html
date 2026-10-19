@@ -3,32 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071a33">
-  <meta name="description" content="Aide&Services60 propose le nettoyage intérieur, extérieur et complet de voiture à Creil, dans l'Oise. Découvrez l'offre de lancement et contactez-nous.">
+  <meta name="theme-color" content="#101d2d">
+  <meta name="description" content="Aide&Services60 : nettoyage automobile intérieur, extérieur et complet à Creil et dans les environs de l'Oise. Contact par téléphone et WhatsApp.">
   <meta name="robots" content="index,follow">
-  <title>Nettoyage automobile à Creil | Aide&Services60</title>
+  <title>Aide&Services60 | Nettoyage automobile à Creil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="site-header">
+  <header class="site-header" id="haut">
     <div class="container nav-wrap">
-      <a class="brand" href="#accueil" aria-label="Aide&Services60, accueil">
-        <span class="brand-mark" aria-hidden="true">A<span>&</span>S</span>
-        <span class="brand-name">Aide<span>&</span>Services60</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Ouvrir le menu</span>
-        <span class="menu-lines" aria-hidden="true"></span>
-      </button>
+      <a class="brand" href="#accueil" aria-label="Aide&Services60, accueil"><span class="brand-mark">A<span>&</span>S</span><span class="brand-name">Aide<span>&</span>Services60<small>NETTOYAGE AUTOMOBILE</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-        <a href="#accueil">Accueil</a>
-        <a href="#prestations">Prestations</a>
-        <a href="#tarifs">Tarifs</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-call" href="tel:+33749502758">Appeler maintenant</a>
+        <a href="#prestations">Prestations</a><a href="#tarifs">Tarifs</a><a href="#zone">Zone d'intervention</a><a href="#contact">Contact</a>
+        <a class="nav-call" href="tel:+33749502758">Appeler <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -36,207 +29,74 @@
   <main id="contenu">
     <section class="hero" id="accueil">
       <div class="hero-shade"></div>
-      <div class="container hero-content">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> Nettoyage automobile · Creil, Oise (60)</p>
-        <h1>Aide&Services60 —<br><span>Le nettoyage automobile à Creil</span></h1>
-        <p class="hero-lead">Prenez soin de votre voiture avec nos prestations de nettoyage intérieur, extérieur et complet.</p>
-        <div class="hero-offer">
-          <span class="offer-tag">Offre de lancement</span>
-          <p>Découvrez nos tarifs de lancement à partir de</p>
-          <strong>15 €</strong>
-          <a class="button button-primary" href="#offre-lancement">Voir les offres</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> CREIL · OISE (60)</p>
+          <h1>Propre, frais,<br><span>prêt à reprendre la route.</span></h1>
+          <p class="hero-lead">Nettoyage automobile intérieur, extérieur ou complet. Une prise de contact simple, des modalités confirmées avec vous.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-select-service="Nettoyage intérieur — offre de lancement 15 €">Profiter de l'offre de lancement <span aria-hidden="true">→</span></a>
+            <a class="btn btn-glass" href="https://wa.me/33749502758?text=Bonjour%20Aide%26Services60%2C%20je%20souhaite%20des%20informations%20sur%20vos%20prestations." target="_blank" rel="noopener noreferrer">Demander des informations <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-trust"><span aria-hidden="true">✓</span> Contact direct · Pas de réservation automatique</div>
         </div>
-        <div class="hero-actions">
-          <a class="button button-light" href="tel:+33749502758">☎ Appeler</a>
-          <a class="button button-whatsapp" href="https://wa.me/33749502758?text=Bonjour%20Aide%26Services60%2C%20je%20souhaite%20obtenir%20des%20renseignements%20sur%20vos%20prestations%20de%20nettoyage%20automobile%20et%20votre%20offre%20de%20lancement." target="_blank" rel="noopener noreferrer">Réserver sur WhatsApp</a>
-        </div>
+        <aside class="launch-card" id="offre-lancement">
+          <div class="launch-top"><span class="pill">OFFRE DE LANCEMENT</span><span aria-hidden="true" class="spark">✳</span></div>
+          <p>À partir de</p><div class="launch-price">15<span>€</span></div>
+          <p class="launch-note">Selon disponibilités. Contactez-nous pour connaître les conditions et réserver.</p>
+          <a class="launch-link" href="#contact" data-select-service="Nettoyage intérieur — offre de lancement 15 €">Choisir mon offre <span aria-hidden="true">→</span></a>
+        </aside>
       </div>
+      <div class="hero-bottom"><div class="container hero-bottom-inner"><span><b>01</b> Intérieur</span><span><b>02</b> Extérieur</span><span><b>03</b> Formule complète</span></div></div>
     </section>
 
-    <section class="section" id="prestations">
+    <section class="section services-section" id="prestations">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Nos prestations</p>
-          <h2>Un nettoyage adapté <span>à vos besoins</span></h2>
-          <p>Choisissez votre type de nettoyage, puis contactez-nous pour connaître les modalités et les disponibilités.</p>
-        </div>
+        <div class="section-head"><div><p class="eyebrow dark-eyebrow">NOS PRESTATIONS</p><h2>Chaque véhicule mérite<br><span>un peu d'attention.</span></h2></div><p class="section-intro">Petite citadine, voiture familiale ou véhicule du quotidien : choisissez le nettoyage souhaité. Les détails sont confirmés directement avec vous.</p></div>
         <div class="service-grid">
-          <article class="service-card">
-            <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=900&q=80" alt="Habitacle et sièges d'une voiture" loading="lazy" width="900" height="600">
-            <div class="service-body">
-              <span class="service-number">01</span>
-              <h3>Nettoyage intérieur</h3>
-              <p>Un nettoyage de l'habitacle pour prendre soin de l'intérieur de votre véhicule.</p>
-              <a class="text-link" href="#offre-lancement">Voir le tarif <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-          <article class="service-card">
-            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=900&q=80" alt="Nettoyage extérieur d'une voiture" loading="lazy" width="900" height="600">
-            <div class="service-body">
-              <span class="service-number">02</span>
-              <h3>Nettoyage extérieur</h3>
-              <p>Un nettoyage de l'extérieur pour entretenir l'apparence de votre voiture.</p>
-              <a class="text-link" href="#offre-lancement">Voir le tarif <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-          <article class="service-card">
-            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Voiture propre vue de trois quarts" loading="lazy" width="900" height="600">
-            <div class="service-body">
-              <span class="service-number">03</span>
-              <h3>Nettoyage complet</h3>
-              <p>Le nettoyage intérieur et extérieur réuni dans une même prestation.</p>
-              <a class="text-link" href="#offre-lancement">Voir le tarif <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
+          <article class="service-card"><div class="service-image"><img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1000&q=85" alt="Intérieur de voiture propre et soigné" loading="lazy"><span class="service-index">01</span></div><div class="service-content"><span class="service-tag">CONFORT</span><h3>Nettoyage intérieur</h3><p>Pour rafraîchir l'habitacle et prendre soin des surfaces intérieures.</p><a class="inline-link" href="#contact" data-select-service="Nettoyage intérieur — offre de lancement 15 €">Choisir l'intérieur <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-card"><div class="service-image"><img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1000&q=85" alt="Voiture de tous les jours à l'extérieur" loading="lazy"><span class="service-index">02</span></div><div class="service-content"><span class="service-tag">PRÉSENTATION</span><h3>Nettoyage extérieur</h3><p>Pour une carrosserie plus propre et une présentation soignée.</p><a class="inline-link" href="#contact" data-select-service="Nettoyage extérieur — offre de lancement 20 €">Choisir l'extérieur <span aria-hidden="true">→</span></a></div></article>
+          <article class="service-card"><div class="service-image"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85" alt="Véhicule familial garé en extérieur" loading="lazy"><span class="service-index">03</span><span class="image-label">FORMULE COMPLÈTE</span></div><div class="service-content"><span class="service-tag">INTÉRIEUR + EXTÉRIEUR</span><h3>Nettoyage complet</h3><p>Une formule combinée pour prendre soin de l'ensemble du véhicule.</p><a class="inline-link" href="#contact" data-select-service="Nettoyage complet intérieur + extérieur — offre de lancement 30 €">Choisir la formule complète <span aria-hidden="true">→</span></a></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section offer-section" id="tarifs">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Nos tarifs</p>
-          <h2>Des prix <span>clairs</span></h2>
-          <p>Retrouvez séparément les prix de lancement et les tarifs habituels.</p>
-        </div>
-        <div class="price-layout">
-          <div class="price-panel launch-panel" id="offre-lancement">
-            <div class="panel-top">
-              <span class="offer-tag">Offre de lancement</span>
-              <span class="panel-icon" aria-hidden="true">✦</span>
-            </div>
-            <h3>Profitez de nos tarifs de lancement</h3>
-            <p class="panel-description">Offre de lancement, selon disponibilités. Contactez-nous pour connaître les conditions et réserver.</p>
-            <div class="price-row">
-              <span>Nettoyage intérieur</span>
-              <strong>15 €</strong>
-            </div>
-            <div class="price-row">
-              <span>Nettoyage extérieur</span>
-              <strong>20 €</strong>
-            </div>
-            <div class="price-row featured-price">
-              <span>Nettoyage complet<br><small>Intérieur + extérieur</small></span>
-              <strong>30 €</strong>
-            </div>
-            <a class="button button-primary button-full" href="#reservation">Profiter de l'offre de lancement</a>
-          </div>
-
-          <div class="price-panel standard-panel">
-            <div class="panel-top">
-              <span class="standard-tag">Tarifs habituels</span>
-            </div>
-            <h3>Nos tarifs habituels</h3>
-            <p class="panel-description">Les prix habituels sont présentés séparément de l'offre de lancement.</p>
-            <div class="price-row">
-              <span>Nettoyage intérieur</span>
-              <strong>20 €</strong>
-            </div>
-            <div class="price-row">
-              <span>Nettoyage extérieur</span>
-              <strong>25 €</strong>
-            </div>
-            <div class="price-row">
-              <span>Nettoyage complet<br><small>Intérieur + extérieur</small></span>
-              <strong>40 €</strong>
-            </div>
-            <a class="button button-outline button-full" href="#reservation">Demander des informations</a>
-          </div>
-        </div>
+    <section class="pricing-section section" id="tarifs"><div class="container">
+      <div class="section-head pricing-head"><div><p class="eyebrow dark-eyebrow">TARIFS DE LANCEMENT</p><h2>Une formule adaptée<br><span>à votre besoin.</span></h2></div><p class="section-intro">Offres de lancement selon disponibilités. Écrivez-nous pour confirmer les conditions et les modalités avant de réserver.</p></div>
+      <div class="pricing-grid">
+        <article class="price-card"><span class="price-kicker">01 · HABITACLE</span><h3>Intérieur</h3><p>Nettoyage de l'habitacle de votre voiture.</p><div class="price"><span class="old-price">20 €</span><strong>15 €</strong></div><a class="btn btn-outline" href="#contact" data-select-service="Nettoyage intérieur — offre de lancement 15 €">Profiter de l'offre <span>→</span></a></article>
+        <article class="price-card"><span class="price-kicker">02 · CARROSSERIE</span><h3>Extérieur</h3><p>Nettoyage extérieur de votre véhicule.</p><div class="price"><span class="old-price">25 €</span><strong>20 €</strong></div><a class="btn btn-outline" href="#contact" data-select-service="Nettoyage extérieur — offre de lancement 20 €">Profiter de l'offre <span>→</span></a></article>
+        <article class="price-card price-featured"><div class="popular-label">FORMULE COMBINÉE</div><span class="price-kicker">03 · FORMULE COMPLÈTE</span><h3>Intérieur + extérieur</h3><p>Les deux prestations réunies dans une formule.</p><div class="price"><span class="old-price">40 €</span><strong>30 €</strong></div><a class="btn btn-primary" href="#contact" data-select-service="Nettoyage complet intérieur + extérieur — offre de lancement 30 €">Profiter de l'offre <span>→</span></a></article>
       </div>
-    </section>
+      <p class="price-disclaimer">Prix habituels indicatifs pour comparaison : intérieur 20 €, extérieur 25 €, formule complète 40 €. Offre de lancement selon disponibilités ; contactez-nous pour confirmer les conditions.</p>
+    </div></section>
 
-    <section class="section why-section" id="pourquoi">
-      <div class="container why-grid">
-        <div class="why-copy">
-          <p class="eyebrow">Aide&Services60</p>
-          <h2>Parlons de votre <span>besoin</span></h2>
-          <p>Nous sommes spécialisés dans le nettoyage automobile. Contactez-nous directement pour poser vos questions, discuter de la prestation souhaitée et connaître les disponibilités.</p>
-          <a class="button button-primary" href="#contact">Nous contacter</a>
+    <section class="area-section" id="zone"><div class="container area-box"><div class="area-icon" aria-hidden="true">⌖</div><div class="area-copy"><p class="eyebrow dark-eyebrow">ZONE D'INTERVENTION</p><h2>Creil et les environs.</h2><p>Le lieu et les modalités de la prestation sont à préciser ensemble lors de la prise de contact.</p></div><a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Creil%2C%20Oise%2C%20France" target="_blank" rel="noopener noreferrer">Voir Creil sur Maps <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="contact-section section" id="contact"><div class="container">
+      <div class="section-head"><div><p class="eyebrow dark-eyebrow">CONTACT & RÉSERVATION</p><h2>Parlons de votre<br><span>prochaine prestation.</span></h2></div><p class="section-intro">Pour une question rapide, WhatsApp s'ouvre directement. Pour choisir une offre, complétez le formulaire : votre demande sera préparée dans WhatsApp.</p></div>
+      <div class="contact-grid">
+        <div class="contact-panel"><span class="contact-panel-kicker">UNE QUESTION ?</span><h3>Contact simple,<br>réponse directe.</h3><p>Les disponibilités et modalités seront confirmées lors de l'échange.</p>
+          <a class="contact-line" href="tel:+33749502758"><span class="contact-icon" aria-hidden="true">☎</span><span><small>TÉLÉPHONE</small><strong>07 49 50 27 58</strong></span><span class="line-arrow">↗</span></a>
+          <a class="contact-line" href="mailto:aideserviceauto60@gmail.com"><span class="contact-icon" aria-hidden="true">✉</span><span><small>E-MAIL</small><strong>aideserviceauto60@gmail.com</strong></span><span class="line-arrow">↗</span></a>
+          <a class="btn btn-whatsapp btn-wide" href="https://wa.me/33749502758?text=Bonjour%20Aide%26Services60%2C%20je%20souhaite%20des%20informations%20sur%20vos%20prestations." target="_blank" rel="noopener noreferrer">Demander des informations sur WhatsApp <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="fact-list">
-          <div class="fact"><span class="fact-check" aria-hidden="true">✓</span><div><h3>Nettoyage automobile</h3><p>Prestations intérieures, extérieures et complètes.</p></div></div>
-          <div class="fact"><span class="fact-check" aria-hidden="true">✓</span><div><h3>Contact direct</h3><p>Appelez-nous ou préparez votre demande sur WhatsApp.</p></div></div>
-          <div class="fact"><span class="fact-check" aria-hidden="true">✓</span><div><h3>Disponibilités à confirmer</h3><p>Échangeons avant de confirmer votre réservation.</p></div></div>
-        </div>
+        <form class="booking-form" id="booking-form">
+          <div class="form-head"><span class="form-step">DEMANDE DE RÉSERVATION</span><h3>Profiter d'une offre</h3><p>Remplissez les informations ci-dessous. WhatsApp s'ouvrira avec votre message prêt à vérifier et à envoyer.</p></div>
+          <label for="customer-name">Votre prénom et nom <span>*</span></label><input id="customer-name" name="name" autocomplete="name" required maxlength="100" placeholder="Comment vous appeler ?">
+          <label for="customer-phone">Votre téléphone <span>*</span></label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="Votre numéro de téléphone">
+          <label for="service-type">Offre souhaitée <span>*</span></label><select id="service-type" name="service" required><option value="" selected disabled>Choisir une offre</option><option value="Nettoyage intérieur — offre de lancement 15 €">Nettoyage intérieur — 15 €</option><option value="Nettoyage extérieur — offre de lancement 20 €">Nettoyage extérieur — 20 €</option><option value="Nettoyage complet intérieur + extérieur — offre de lancement 30 €">Nettoyage complet intérieur + extérieur — 30 €</option><option value="Demande d'informations sur les tarifs habituels">Question sur les tarifs habituels</option><option value="Autre demande de renseignements">Autre demande de renseignements</option></select>
+          <label for="customer-area">Ville / secteur <small>(facultatif)</small></label><input id="customer-area" name="area" autocomplete="address-level2" maxlength="100" placeholder="Ex. Creil">
+          <label for="customer-message">Précisions <small>(facultatif)</small></label><textarea id="customer-message" name="message" rows="3" maxlength="1000" placeholder="Votre véhicule, vos disponibilités ou votre question…"></textarea>
+          <button class="btn btn-primary btn-wide" type="submit">Continuer sur WhatsApp <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p><p class="form-privacy">Le site ne stocke pas les informations saisies. Le message ne sera envoyé qu'après votre confirmation dans WhatsApp.</p>
+        </form>
       </div>
-    </section>
+    </div></section>
 
-    <section class="section area-section" id="zone">
-      <div class="container area-box">
-        <div class="area-icon" aria-hidden="true">⌖</div>
-        <div>
-          <p class="eyebrow">Zone d'intervention</p>
-          <h2>Creil et environs</h2>
-          <p>Aide&Services60 intervient à Creil et dans les environs, selon les modalités à confirmer lors de la prise de contact.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Contact & réservation</p>
-          <h2>Votre demande commence <span>ici</span></h2>
-          <p>Appelez-nous ou remplissez le formulaire pour préparer un message WhatsApp. Aucun message ne sera envoyé sans votre action.</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Contactez-nous directement</h3>
-            <a class="contact-method" href="tel:+33749502758"><span class="method-icon" aria-hidden="true">☎</span><span><small>Téléphone</small><strong>07 49 50 27 58</strong></span></a>
-            <a class="contact-method" href="mailto:aideserviceauto60@gmail.com"><span class="method-icon" aria-hidden="true">✉</span><span><small>E-mail</small><strong>aideserviceauto60@gmail.com</strong></span></a>
-            <a class="button button-whatsapp button-full" href="https://wa.me/33749502758?text=Bonjour%20Aide%26Services60%2C%20je%20souhaite%20obtenir%20des%20renseignements%20sur%20vos%20prestations%20de%20nettoyage%20automobile%20et%20votre%20offre%20de%20lancement." target="_blank" rel="noopener noreferrer">Ouvrir WhatsApp</a>
-            <p class="small-note">La réservation et les modalités de prestation sont à confirmer lors de l'échange.</p>
-          </div>
-
-          <form class="booking-form" id="booking-form">
-            <h3>Préparer une demande WhatsApp</h3>
-            <p class="small-note">Les champs marqués d'un * sont obligatoires. Vos informations ne sont pas enregistrées par ce site.</p>
-            <label for="customer-name">Votre nom *</label>
-            <input id="customer-name" name="name" autocomplete="name" required maxlength="100" placeholder="Nom et prénom">
-            <label for="customer-phone">Votre numéro de téléphone *</label>
-            <input id="customer-phone" name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="Votre numéro">
-            <label for="service-type">Type de nettoyage souhaité *</label>
-            <select id="service-type" name="service" required>
-              <option value="">Choisissez une prestation</option>
-              <option>Nettoyage intérieur — offre de lancement 15 €</option>
-              <option>Nettoyage extérieur — offre de lancement 20 €</option>
-              <option>Nettoyage complet intérieur + extérieur — offre de lancement 30 €</option>
-              <option>Question sur les tarifs habituels</option>
-              <option>Autre demande de renseignements</option>
-            </select>
-            <label for="customer-message">Message (facultatif)</label>
-            <textarea id="customer-message" name="message" rows="4" maxlength="1000" placeholder="Précisez votre demande ou vos disponibilités si vous le souhaitez."></textarea>
-            <button class="button button-whatsapp button-full" type="submit">Préparer ma demande sur WhatsApp</button>
-            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section class="legal-notice" aria-label="Informations juridiques à compléter">
-      <div class="container legal-grid">
-        <div id="mentions-legales">
-          <h2>Mentions légales</h2>
-          <p>Cette rubrique doit être complétée avec les informations légales réelles de l'éditeur du site et de l'hébergeur avant publication. Aucune information non fournie n'a été inventée.</p>
-        </div>
-        <div id="confidentialite">
-          <h2>Confidentialité</h2>
-          <p>Le formulaire de ce site prépare un message WhatsApp dans votre navigateur. Il n'enregistre ni ne transmet automatiquement les champs. La présente rubrique doit être complétée si d'autres outils de collecte ou de mesure sont ajoutés.</p>
-        </div>
-      </div>
-    </section>
+    <section class="legal-section" aria-label="Informations du site"><div class="container legal-grid"><details id="mentions-legales"><summary>Mentions légales</summary><p>Les informations légales de l'éditeur et de l'hébergeur doivent être complétées avec les données exactes avant publication.</p></details><details id="confidentialite"><summary>Confidentialité</summary><p>Les informations saisies dans le formulaire sont utilisées uniquement pour préparer le message WhatsApp. Le site ne les enregistre pas et n'envoie aucun message automatiquement.</p></details></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a class="brand footer-brand" href="#accueil"><span class="brand-mark">A<span>&</span>S</span><span class="brand-name">Aide<span>&</span>Services60</span></a>
-      <p>Creil, Oise (60) · <a href="tel:+33749502758">07 49 50 27 58</a> · <a href="mailto:aideserviceauto60@gmail.com">E-mail</a></p>
-      <div class="footer-links"><a href="#mentions-legales">Mentions légales à compléter</a><a href="#confidentialite">Confidentialité</a></div>
-      <p class="copyright">© <span id="current-year"></span> Aide&Services60</p>
-    </div>
-  </footer>
-
-  <a class="floating-call" href="tel:+33749502758" aria-label="Appeler Aide&Services60">☎ <span>Appeler</span></a>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#accueil"><span class="brand-mark">A<span>&</span>S</span><span class="brand-name">Aide<span>&</span>Services60<small>NETTOYAGE AUTOMOBILE</small></span></a><p>Nettoyage automobile · Creil, Oise (60)<br><a href="tel:+33749502758">07 49 50 27 58</a> · <a href="mailto:aideserviceauto60@gmail.com">E-mail</a></p><div class="footer-links"><a href="#mentions-legales">Mentions légales</a><a href="#confidentialite">Confidentialité</a><a href="#haut">Retour en haut ↑</a></div><small class="copyright">© <span id="current-year"></span> Aide&Services60</small></div></footer>
+  <a class="floating-whatsapp" href="https://wa.me/33749502758?text=Bonjour%20Aide%26Services60%2C%20je%20souhaite%20des%20informations%20sur%20vos%20prestations." target="_blank" rel="noopener noreferrer" aria-label="Contacter Aide&Services60 sur WhatsApp">◉ <span>WhatsApp</span></a>
 </body>
 </html>
